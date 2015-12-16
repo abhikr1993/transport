@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+	<form action = "add.php" method = "post">
+	<center><pre>
+		<br />
+		<br />
+		<label>CusomerId: 	<input type = "text" size = "25" id = "cust" name = "customerid" value = "" required readonly/>
+		<script>
+		var x = Math.floor((Math.random() * 100000) + 10000);
+		document.getElementById("cust").value = x;
+		</script>
+		</label><br /><br />
+		<label>Name: 		<input type = "text" size = "25" name = "name" required />
+		</label><br /><br />
+		<label>Address: 	<input type = "text" size = "25" name = "address" required/>
+		</label><br/><br />
+		<label>Pincode: 	<input type = "text" size = "25" maxLength = "6" pattern = "[0-9]{6}" name = "pincode" required />
+		</label><br /><br />
+		<label>Email: 		<input type = "email" size = "25" name = "email" />
+		</label><br /><br />
+		<label>Phone:		<input type = "text" size = "25" maxLength = "10" pattern = "[0-9]{10}" name = "phone" />
+		</label><br />
+		<input type = "submit" value = "Add" />
+		</pre>
+	</center>
+	</form>
+
+</body>
+
+</html>

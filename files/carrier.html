@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+	<form action = "carrier.php" method = "post">
+	<center><pre>
+		<br />
+		<br />
+		<label>TransportId: 	<input type = "text" size = "25" id = "transport" name = "transportid" value = "" required readonly/>
+		</label>
+		<script>
+		var x = Math.floor((Math.random() * 1000) + 100);
+		document.getElementById("transport").value = x;
+		</script>
+		<br />
+		<label>Type:</label>						       
+		 <input type = "radio" name = "type" value = "road" checked />Roadways
+		 <input type = "radio" name = "type" value = "rail" />Railways
+		<input type = "radio" name = "type" value = "air" />Airways
+		<input type = "radio" name = "type" value = "sea" />Seaways
+		<br /><br />
+		<label>Rate(Rs/kg/km): 	<input type = "text" size = "20" maxLength = "3" pattern = "[0-9]{1,3}" name = "rate" required />
+		</label><br /><br />
+		<label>Status:           <input type = "text" size = "25" name = "status" value = "Idle" readonly/>
+		</label><br /><br />
+		<input type = "submit" value = "Add" />
+		</pre>
+	</center>
+	</form>
+
+</body>
+
+</html>

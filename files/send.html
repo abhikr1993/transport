@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Send</title>
+</head>
+<body>
+	<?php
+		$MyIp = 'localhost';
+		$MyUser = 'infernal';
+		$MyPassword = 'infernal';
+		$MyDatabase = 'transport';
+		
+
+		$conn = mysqli_connect($MyIp,$MyUser,$MyPassword,$MyDatabase);
+		if (!$conn){
+			printf("Connection Error. %s",mysqli_connect_error());
+			exit();
+		}
+		$sql = "select batchid from goods where batchid not in (select batchid from sending)";
+		$result = mysqli_query($conn,$sql);
+		while ($row = mysqli_fetch_assoc($result)){
+			
+		}
+	?>
+</body>
+</html>

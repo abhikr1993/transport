@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+Signup!!!
+</title>
+</head>
+<body bgcolor = "">
+	<br />
+	<br />
+	<br />
+	<form action = "signup.php" method = "post" >
+	<center>
+	<pre>
+		<label> Name:				<input type = "text" size = "25" name = "name" /><br />
+		</label>
+		<label> Username: 			<input type = "text" size = "25" name = "username" /><br />
+		</label>
+		<label> Password:			<input type = "password" size = "25" name = "password" /><br />
+		</label>
+		<label> Re-enter Password:		<input type = "password" size = "25" name = "password2" /><br /><br /><br />
+		</label>
+		<a href = "../login.html"><button type = "button">Cancel</button></a>			<input type = "submit" value = "Register" />
+	</pre>
+	</center>
+	</form>
+	<script>
+		function openpopup(form){
+		    window.open('www.google.com', 'popup', 'width=400,height=400,resizeable,scrollbars');
+			form.target = 'popup';
+			return true;
+		}
+	</script>
+
+</body>
+</html>

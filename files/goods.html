@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+	<form action = "goods.php" method = "post">
+	<center><pre>
+		<br />
+		<br />
+		<label>BatchId:		<input type = "text" size = "25" id = "batch" name = "batchid" value = "" required readonly/>
+		<script>
+		var x = Math.floor((Math.random() * 100000) + 10000);
+		document.getElementById("batch").value = x;
+		</script>
+		</label><br /><br />
+		<label>Exporter Id: 		<input type = "text" size = "25" name = "exporterid" required />
+		</label><br /><br />
+		<label>Importer Id:		<input type = "text" size = "25" name = "importerid" required/>
+		</label><br/><br />
+		<label>Itemlist: 		<input type = "text" size = "25" name = "itemlist" />
+		</label><br /><br />
+		<label>Weight(kg): 		<input type = "text" size = "25" pattern = "[0-9]{1,10}" name = "weight" required/>
+		</label><br /><br />
+		<label>Distance(km):		<input type = "text" size = "25" pattern = "[0-9]{1,15}" name = "distance" required />
+		</label><br />
+		<input type = "submit" value = "Add" />
+		</pre>
+	</center>
+	</form>
+
+</body>
+
+</html>
